@@ -96,6 +96,7 @@
   # Added by dankuri
   boot.kernelPackages = pkgs.linuxPackages_latest;
   nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.trusted-users = ["root" "dankuri"];
 
   programs.zsh = {
     enable = true;
