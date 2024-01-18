@@ -53,6 +53,34 @@
 
   programs.zsh = {
     enable = true;
+    enableAutosuggestions = true;
+    enableCompletion = true;
+    sessionVariables = {
+      COMPLETION_WAITING_DOTS = true;
+    };
+    # historySubstringSearch.enable = true;
+    shellAliases = {
+      cr = "clear";
+      e = "exit";
+      lg = "lazygit";
+      ls = "eza";
+      ll = "eza -l";
+      la = "eza -la";
+      lt = "eza --tree";
+    };
+    initExtra = ''
+      unsetopt correct_all
+      setopt correct
+      bindkey "''${key[Up]}" up-line-or-search
+      bindkey "''${key[Down]}" down-line-or-search
+      bindkey "^[[1;3C" forward-word
+      bindkey "^[[1;3D" backward-word
+    '';
+    oh-my-zsh = {
+      enable = true;
+      plugins = ["git" "fzf" "zoxide"];
+      theme = "robbyrussell";
+    };
     plugins = [
       {
         name = "zsh-autosuggestions";

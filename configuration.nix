@@ -98,33 +98,7 @@
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nix.settings.trusted-users = ["root" "dankuri"];
 
-  programs.zsh = {
-    enable = true;
-    autosuggestions.enable = true;
-    shellInit = ''
-      unsetopt correct_all
-      setopt correct
-
-      COMPLETION_WAITING_DOTS="true"
-
-      bindkey "^[[1;3C" forward-word
-      bindkey "^[[1;3D" backward-word
-    '';
-    ohMyZsh = {
-      enable = true;
-      plugins = ["git" "fzf" "zoxide"];
-      theme = "robbyrussell";
-    };
-    shellAliases = {
-      cr = "clear";
-      e = "exit";
-      lg = "lazygit";
-      ls = "eza";
-      ll = "eza -l";
-      la = "eza -la";
-      lt = "eza --tree";
-    };
-  };
+  programs.zsh.enable = true;
 
   programs._1password.enable = true;
   programs._1password-gui = {
