@@ -259,11 +259,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1705532122,
-        "narHash": "sha256-OjXZdKpDdA6gg5jOYOLiK8J8Be0oqXGMlNjKdIjC908=",
+        "lastModified": 1705614233,
+        "narHash": "sha256-nlmmpTuxkd00+ph6XJZ+hdBu6KO8RtGiHg7Wl6+Ad/g=",
         "owner": "dankuri",
         "repo": "nvim-flake",
-        "rev": "6cec2972cf5c7eeff3388a17b1059defef431097",
+        "rev": "933e34d3a7ac7697b67dc9012d6f20b1eba97c6b",
         "type": "github"
       },
       "original": {
