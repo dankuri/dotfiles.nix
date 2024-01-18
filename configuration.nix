@@ -129,6 +129,7 @@
     lazygit
     neofetch
     neovim
+    nvd
     ripgrep
     spotify
     telegram-desktop

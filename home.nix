@@ -67,6 +67,7 @@
       ll = "eza -l";
       la = "eza -la";
       lt = "eza --tree";
+      nixdiff = ''ls -t created -d /nix/var/nix/profiles/* | tail -n 2 | awk '{print $1}' - | xargs nvd diff'';
     };
     initExtra = ''
       unsetopt correct_all
