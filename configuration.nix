@@ -130,6 +130,7 @@
     neofetch
     neovim
     nvd
+    qbittorrent
     ripgrep
     spotify
     telegram-desktop
