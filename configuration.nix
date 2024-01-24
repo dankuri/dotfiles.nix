@@ -114,6 +114,16 @@
 
   services.udev.packages = with pkgs; [gnome.gnome-settings-daemon];
 
+  services.flatpak.enable = true;
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
+  programs.gamemode.enable = true;
+
+  hardware.opengl.driSupport32Bit = true;
+
   environment.systemPackages = with pkgs; [
     bat
     element-desktop
@@ -141,6 +151,14 @@
     wget
     yazi
     zoxide
+
+    # gaming
+    gamemode
+    steam
+    steam-run
+    nvtop
+    mangohud
+    lutris
   ];
   # End dankuri additions
 
