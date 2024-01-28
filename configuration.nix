@@ -153,12 +153,18 @@
     zoxide
 
     # gaming
+    r2modman
     gamemode
     steam
     steam-run
     nvtop
     mangohud
-    lutris
+    (lutris.override {
+      extraPkgs = pkgs: [
+        wineWowPackages.stable
+        winetricks
+      ];
+    })
   ];
   # End dankuri additions
 
