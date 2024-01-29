@@ -120,7 +120,9 @@
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
   };
+
   programs.gamemode.enable = true;
+  programs.gamescope.enable = true;
 
   hardware.opengl.driSupport32Bit = true;
 
