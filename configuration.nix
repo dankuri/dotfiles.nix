@@ -138,6 +138,7 @@
     gnomeExtensions.dock-from-dash
     htop
     jq
+    krita
     lazygit
     neofetch
     neovim
