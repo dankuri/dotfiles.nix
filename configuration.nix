@@ -136,6 +136,7 @@
 
   environment.systemPackages = with pkgs; [
     bat
+    vesktop
     element-desktop
     eza
     fzf
@@ -157,7 +158,6 @@
     telegram-desktop
     tmux
     vim
-    webcord
     wezterm
     wget
     yazi
